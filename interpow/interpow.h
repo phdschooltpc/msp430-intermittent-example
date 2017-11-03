@@ -2,11 +2,14 @@
  *
  * InterPow: library for operation under intermittent power.
  *
- *
  * TODO:
- *
  * - [M] Return errors for Read/Write operations in case of reading/writing
  *       a field from another channel or any other invalid option
+ *
+ * Authors: Carlo Delle Donne, Dimitris Patoukas, Thijmen Ketel
+ *
+ * Credits: developed based on the Chain idea (paper by A. Colin and B. Lucia),
+ *          available at https://brandonlucia.com/pubs/chain.pdf.
  *
  */
 
