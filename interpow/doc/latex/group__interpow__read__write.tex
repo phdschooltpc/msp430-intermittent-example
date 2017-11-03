@@ -1,0 +1,802 @@
+\hypertarget{group__interpow__read__write}{}\section{Read and Write}
+\label{group__interpow__read__write}\index{Read and Write@{Read and Write}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__interpow__read__write_ga6fd2426c3c4616b2bb53b91bad65185a}{Read\+Field\+\_\+8}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  D\+ST)
+\begin{DoxyCompactList}\small\item\em Read 8-\/bit signed integer field from channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga5eec83d25a522d70d194715cc7ff038e}{Read\+Field\+\_\+\+U8}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  D\+ST)
+\begin{DoxyCompactList}\small\item\em Read 8-\/bit unsigned integer field from channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga184cbe0d981e72e70afc728331574aba}{Read\+Self\+Field\+\_\+8}(T\+A\+SK,  F\+LD,  D\+ST)
+\begin{DoxyCompactList}\small\item\em Read 8-\/bit signed integer self-\/field from channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga863ffeec91ffffab0966a26c91785e27}{Read\+Self\+Field\+\_\+\+U8}(T\+A\+SK,  F\+LD,  D\+ST)
+\begin{DoxyCompactList}\small\item\em Read 8-\/bit unsigned integer self-\/field from channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga419c870d721751b80a9e21b571351f4d}{Read\+Field\+\_\+16}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  D\+ST)
+\begin{DoxyCompactList}\small\item\em Read 16-\/bit signed integer field from channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga2e7b75867ded3353c718dfaf3988a871}{Read\+Field\+\_\+\+U16}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  D\+ST)
+\begin{DoxyCompactList}\small\item\em Read 16-\/bit unsigned integer field from channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_gaae12bee359089f39212526e5a186648e}{Read\+Self\+Field\+\_\+16}(T\+A\+SK,  F\+LD,  D\+ST)
+\begin{DoxyCompactList}\small\item\em Read 16-\/bit signed integer self-\/field from channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_gad1fd8a223e580fafd6bf4a1b55d06b5f}{Read\+Self\+Field\+\_\+\+U16}(T\+A\+SK,  F\+LD,  D\+ST)
+\begin{DoxyCompactList}\small\item\em Read 16-\/bit unsigned integer self-\/field from channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_gafbde9dd679e81ac365418deb8ccb24f8}{Read\+Field\+\_\+32}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  D\+ST)
+\begin{DoxyCompactList}\small\item\em Read 32-\/bit signed integer field from channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga07f39dc21983a79a7be2e8ef9ae35782}{Read\+Field\+\_\+\+U32}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  D\+ST)
+\begin{DoxyCompactList}\small\item\em Read 32-\/bit unsigned integer field from channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga9d4cd63895f96938b8ab7803f207cfc8}{Read\+Self\+Field\+\_\+32}(T\+A\+SK,  F\+LD,  D\+ST)
+\begin{DoxyCompactList}\small\item\em Read 32-\/bit signed integer self-\/field from channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_gaab34eabd6d6070eeac30f62183465eaa}{Read\+Self\+Field\+\_\+\+U32}(T\+A\+SK,  F\+LD,  D\+ST)
+\begin{DoxyCompactList}\small\item\em Read 32-\/bit unsigned integer self-\/field from channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_gaab3f80ded63f88a54d0e32accbd23dfc}{Read\+Field\+\_\+\+F32}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  D\+ST)
+\begin{DoxyCompactList}\small\item\em Read 32-\/bit float field from channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga43b5191399959c594506d289ed455127}{Read\+Self\+Field\+\_\+\+F32}(T\+A\+SK,  F\+LD,  D\+ST)
+\begin{DoxyCompactList}\small\item\em Read 32-\/bit float self-\/field from channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_gafd2f8f99cfe3fccfa2bea3394ed37125}{Write\+Field\+\_\+8}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  S\+RC)
+\begin{DoxyCompactList}\small\item\em Write 8-\/bit signed integer field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga8f0de203ad0e6a2c4b93cb5de74d11f5}{Write\+Field\+\_\+\+U8}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  S\+RC)
+\begin{DoxyCompactList}\small\item\em Write 8-\/bit unsigned integer field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga4a8d4891f309ee7ad151829addbb2f9b}{Write\+Self\+Field\+\_\+8}(T\+A\+SK,  F\+LD,  S\+RC)
+\begin{DoxyCompactList}\small\item\em Write 8-\/bit signed integer self-\/field in channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga3ccf9342cdc5059a8657527baec91f75}{Write\+Self\+Field\+\_\+\+U8}(T\+A\+SK,  F\+LD,  S\+RC)
+\begin{DoxyCompactList}\small\item\em Write 8-\/bit unsigned integer self-\/field in channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga8a1d2a8ec6e0ac991ad5ed6c18c9c07a}{Write\+Field\+\_\+16}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  S\+RC)
+\begin{DoxyCompactList}\small\item\em Write 16-\/bit signed integer field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga58f71a953a06a6e8f69f9244c151dfc5}{Write\+Field\+\_\+\+U16}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  S\+RC)
+\begin{DoxyCompactList}\small\item\em Write 16-\/bit unsigned integer field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga5b49e015f652cdccc9755666ed7603b7}{Write\+Self\+Field\+\_\+16}(T\+A\+SK,  F\+LD,  S\+RC)
+\begin{DoxyCompactList}\small\item\em Write 16-\/bit signed integer self-\/field in channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga397af44c51f5c0b43aa48a429d64972f}{Write\+Self\+Field\+\_\+\+U16}(T\+A\+SK,  F\+LD,  S\+RC)
+\begin{DoxyCompactList}\small\item\em Write 16-\/bit unsigned integer self-\/field in channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga374eba133dbdcd78229749be95aafcfd}{Write\+Field\+\_\+32}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  S\+RC)
+\begin{DoxyCompactList}\small\item\em Write 32-\/bit signed integer field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_gac1587788948a550d7b99c20473bf3906}{Write\+Field\+\_\+\+U32}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  S\+RC)
+\begin{DoxyCompactList}\small\item\em Write 32-\/bit unsigned integer field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga481cc0dfd07e4ddc56f9622ac5601f66}{Write\+Self\+Field\+\_\+32}(T\+A\+SK,  F\+LD,  S\+RC)
+\begin{DoxyCompactList}\small\item\em Write 32-\/bit signed integer self-\/field in channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga99ddf27f2c34b3d876d525597eb0d267}{Write\+Self\+Field\+\_\+\+U32}(T\+A\+SK,  F\+LD,  S\+RC)
+\begin{DoxyCompactList}\small\item\em Write 32-\/bit unsigned integer self-\/field in channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga455a59b971b82fcf001f46ac271e4301}{Write\+Field\+\_\+\+F32}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  S\+RC)
+\begin{DoxyCompactList}\small\item\em Write 32-\/bit float field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_gaec0f82acde1a6ba9d8740f49a28452ca}{Write\+Self\+Field\+\_\+\+F32}(T\+A\+SK,  F\+LD,  S\+RC)
+\begin{DoxyCompactList}\small\item\em Write 32-\/bit float self-\/field in channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga743f1dfe8811e082696e0cf3e2739e4b}{Write\+Field\+Element\+\_\+8}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  S\+RC,  P\+OS)
+\begin{DoxyCompactList}\small\item\em Write a single element of a 8-\/bit signed field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_gacaeeccfb46736afa8aa68d3ead9d49f3}{Write\+Field\+Element\+\_\+\+U8}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  S\+RC,  P\+OS)
+\begin{DoxyCompactList}\small\item\em Write a single element of a 8-\/bit unsigned field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga2b60b2e1baee24139a874dcd961f8aad}{Write\+Field\+Element\+\_\+16}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  S\+RC,  P\+OS)
+\begin{DoxyCompactList}\small\item\em Write a single element of a 16-\/bit signed field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_gaa4b03c0cc35ebc5645ce74c5ce045986}{Write\+Field\+Element\+\_\+\+U16}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  S\+RC,  P\+OS)
+\begin{DoxyCompactList}\small\item\em Write a single element of a 16-\/bit unsigned field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga597258a7c772747373103ca32b9cccff}{Write\+Field\+Element\+\_\+32}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  S\+RC,  P\+OS)
+\begin{DoxyCompactList}\small\item\em Write a single element of a 32-\/bit signed field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_ga61bc8f63b25404b555c65c108947a0c4}{Write\+Field\+Element\+\_\+\+U32}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  S\+RC,  P\+OS)
+\begin{DoxyCompactList}\small\item\em Write a single element of a 32-\/bit unsigned field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__read__write_gac680c31fb99e389820321fc05f383c33}{Write\+Field\+Element\+\_\+\+F32}(S\+R\+C\+\_\+\+T\+A\+SK,  D\+S\+T\+\_\+\+T\+A\+SK,  F\+LD,  S\+RC,  P\+OS)
+\begin{DoxyCompactList}\small\item\em Write a single element of a 32-\/bit float field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Macros for read/write operations, differentiated by field types. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__interpow__read__write_ga419c870d721751b80a9e21b571351f4d}\label{group__interpow__read__write_ga419c870d721751b80a9e21b571351f4d}} 
+\index{Read and Write@{Read and Write}!Read\+Field\+\_\+16@{Read\+Field\+\_\+16}}
+\index{Read\+Field\+\_\+16@{Read\+Field\+\_\+16}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Read\+Field\+\_\+16}{ReadField\_16}}
+{\footnotesize\ttfamily \#define Read\+Field\+\_\+16(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{D\+ST }\end{DoxyParamCaption})}
+
+
+
+Read 16-\/bit signed integer field from channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to read \\
+\hline
+{\em D\+ST} & address to store the result at \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_gafbde9dd679e81ac365418deb8ccb24f8}\label{group__interpow__read__write_gafbde9dd679e81ac365418deb8ccb24f8}} 
+\index{Read and Write@{Read and Write}!Read\+Field\+\_\+32@{Read\+Field\+\_\+32}}
+\index{Read\+Field\+\_\+32@{Read\+Field\+\_\+32}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Read\+Field\+\_\+32}{ReadField\_32}}
+{\footnotesize\ttfamily \#define Read\+Field\+\_\+32(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{D\+ST }\end{DoxyParamCaption})}
+
+
+
+Read 32-\/bit signed integer field from channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to read \\
+\hline
+{\em D\+ST} & address to store the result at \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga6fd2426c3c4616b2bb53b91bad65185a}\label{group__interpow__read__write_ga6fd2426c3c4616b2bb53b91bad65185a}} 
+\index{Read and Write@{Read and Write}!Read\+Field\+\_\+8@{Read\+Field\+\_\+8}}
+\index{Read\+Field\+\_\+8@{Read\+Field\+\_\+8}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Read\+Field\+\_\+8}{ReadField\_8}}
+{\footnotesize\ttfamily \#define Read\+Field\+\_\+8(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{D\+ST }\end{DoxyParamCaption})}
+
+
+
+Read 8-\/bit signed integer field from channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to read \\
+\hline
+{\em D\+ST} & address to store the result at \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_gaab3f80ded63f88a54d0e32accbd23dfc}\label{group__interpow__read__write_gaab3f80ded63f88a54d0e32accbd23dfc}} 
+\index{Read and Write@{Read and Write}!Read\+Field\+\_\+\+F32@{Read\+Field\+\_\+\+F32}}
+\index{Read\+Field\+\_\+\+F32@{Read\+Field\+\_\+\+F32}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Read\+Field\+\_\+\+F32}{ReadField\_F32}}
+{\footnotesize\ttfamily \#define Read\+Field\+\_\+\+F32(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{D\+ST }\end{DoxyParamCaption})}
+
+
+
+Read 32-\/bit float field from channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to read \\
+\hline
+{\em D\+ST} & address to store the result at \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga2e7b75867ded3353c718dfaf3988a871}\label{group__interpow__read__write_ga2e7b75867ded3353c718dfaf3988a871}} 
+\index{Read and Write@{Read and Write}!Read\+Field\+\_\+\+U16@{Read\+Field\+\_\+\+U16}}
+\index{Read\+Field\+\_\+\+U16@{Read\+Field\+\_\+\+U16}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Read\+Field\+\_\+\+U16}{ReadField\_U16}}
+{\footnotesize\ttfamily \#define Read\+Field\+\_\+\+U16(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{D\+ST }\end{DoxyParamCaption})}
+
+
+
+Read 16-\/bit unsigned integer field from channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to read \\
+\hline
+{\em D\+ST} & address to store the result at \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga07f39dc21983a79a7be2e8ef9ae35782}\label{group__interpow__read__write_ga07f39dc21983a79a7be2e8ef9ae35782}} 
+\index{Read and Write@{Read and Write}!Read\+Field\+\_\+\+U32@{Read\+Field\+\_\+\+U32}}
+\index{Read\+Field\+\_\+\+U32@{Read\+Field\+\_\+\+U32}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Read\+Field\+\_\+\+U32}{ReadField\_U32}}
+{\footnotesize\ttfamily \#define Read\+Field\+\_\+\+U32(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{D\+ST }\end{DoxyParamCaption})}
+
+
+
+Read 32-\/bit unsigned integer field from channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to read \\
+\hline
+{\em D\+ST} & address to store the result at \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga5eec83d25a522d70d194715cc7ff038e}\label{group__interpow__read__write_ga5eec83d25a522d70d194715cc7ff038e}} 
+\index{Read and Write@{Read and Write}!Read\+Field\+\_\+\+U8@{Read\+Field\+\_\+\+U8}}
+\index{Read\+Field\+\_\+\+U8@{Read\+Field\+\_\+\+U8}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Read\+Field\+\_\+\+U8}{ReadField\_U8}}
+{\footnotesize\ttfamily \#define Read\+Field\+\_\+\+U8(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{D\+ST }\end{DoxyParamCaption})}
+
+
+
+Read 8-\/bit unsigned integer field from channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to read \\
+\hline
+{\em D\+ST} & address to store the result at \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_gaae12bee359089f39212526e5a186648e}\label{group__interpow__read__write_gaae12bee359089f39212526e5a186648e}} 
+\index{Read and Write@{Read and Write}!Read\+Self\+Field\+\_\+16@{Read\+Self\+Field\+\_\+16}}
+\index{Read\+Self\+Field\+\_\+16@{Read\+Self\+Field\+\_\+16}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Read\+Self\+Field\+\_\+16}{ReadSelfField\_16}}
+{\footnotesize\ttfamily \#define Read\+Self\+Field\+\_\+16(\begin{DoxyParamCaption}\item[{}]{T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{D\+ST }\end{DoxyParamCaption})}
+
+
+
+Read 16-\/bit signed integer self-\/field from channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+A\+SK} & channel\textquotesingle{}s source and destination task \\
+\hline
+{\em F\+LD} & field to read \\
+\hline
+{\em D\+ST} & address to store the result at \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga9d4cd63895f96938b8ab7803f207cfc8}\label{group__interpow__read__write_ga9d4cd63895f96938b8ab7803f207cfc8}} 
+\index{Read and Write@{Read and Write}!Read\+Self\+Field\+\_\+32@{Read\+Self\+Field\+\_\+32}}
+\index{Read\+Self\+Field\+\_\+32@{Read\+Self\+Field\+\_\+32}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Read\+Self\+Field\+\_\+32}{ReadSelfField\_32}}
+{\footnotesize\ttfamily \#define Read\+Self\+Field\+\_\+32(\begin{DoxyParamCaption}\item[{}]{T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{D\+ST }\end{DoxyParamCaption})}
+
+
+
+Read 32-\/bit signed integer self-\/field from channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+A\+SK} & channel\textquotesingle{}s source and destination task \\
+\hline
+{\em F\+LD} & field to read \\
+\hline
+{\em D\+ST} & address to store the result at \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga184cbe0d981e72e70afc728331574aba}\label{group__interpow__read__write_ga184cbe0d981e72e70afc728331574aba}} 
+\index{Read and Write@{Read and Write}!Read\+Self\+Field\+\_\+8@{Read\+Self\+Field\+\_\+8}}
+\index{Read\+Self\+Field\+\_\+8@{Read\+Self\+Field\+\_\+8}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Read\+Self\+Field\+\_\+8}{ReadSelfField\_8}}
+{\footnotesize\ttfamily \#define Read\+Self\+Field\+\_\+8(\begin{DoxyParamCaption}\item[{}]{T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{D\+ST }\end{DoxyParamCaption})}
+
+
+
+Read 8-\/bit signed integer self-\/field from channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+A\+SK} & channel\textquotesingle{}s source and destination task \\
+\hline
+{\em F\+LD} & field to read \\
+\hline
+{\em D\+ST} & address to store the result at \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga43b5191399959c594506d289ed455127}\label{group__interpow__read__write_ga43b5191399959c594506d289ed455127}} 
+\index{Read and Write@{Read and Write}!Read\+Self\+Field\+\_\+\+F32@{Read\+Self\+Field\+\_\+\+F32}}
+\index{Read\+Self\+Field\+\_\+\+F32@{Read\+Self\+Field\+\_\+\+F32}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Read\+Self\+Field\+\_\+\+F32}{ReadSelfField\_F32}}
+{\footnotesize\ttfamily \#define Read\+Self\+Field\+\_\+\+F32(\begin{DoxyParamCaption}\item[{}]{T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{D\+ST }\end{DoxyParamCaption})}
+
+
+
+Read 32-\/bit float self-\/field from channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+A\+SK} & channel\textquotesingle{}s source and destination task \\
+\hline
+{\em F\+LD} & field to read \\
+\hline
+{\em D\+ST} & address to store the result at \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_gad1fd8a223e580fafd6bf4a1b55d06b5f}\label{group__interpow__read__write_gad1fd8a223e580fafd6bf4a1b55d06b5f}} 
+\index{Read and Write@{Read and Write}!Read\+Self\+Field\+\_\+\+U16@{Read\+Self\+Field\+\_\+\+U16}}
+\index{Read\+Self\+Field\+\_\+\+U16@{Read\+Self\+Field\+\_\+\+U16}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Read\+Self\+Field\+\_\+\+U16}{ReadSelfField\_U16}}
+{\footnotesize\ttfamily \#define Read\+Self\+Field\+\_\+\+U16(\begin{DoxyParamCaption}\item[{}]{T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{D\+ST }\end{DoxyParamCaption})}
+
+
+
+Read 16-\/bit unsigned integer self-\/field from channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+A\+SK} & channel\textquotesingle{}s source and destination task \\
+\hline
+{\em F\+LD} & field to read \\
+\hline
+{\em D\+ST} & address to store the result at \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_gaab34eabd6d6070eeac30f62183465eaa}\label{group__interpow__read__write_gaab34eabd6d6070eeac30f62183465eaa}} 
+\index{Read and Write@{Read and Write}!Read\+Self\+Field\+\_\+\+U32@{Read\+Self\+Field\+\_\+\+U32}}
+\index{Read\+Self\+Field\+\_\+\+U32@{Read\+Self\+Field\+\_\+\+U32}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Read\+Self\+Field\+\_\+\+U32}{ReadSelfField\_U32}}
+{\footnotesize\ttfamily \#define Read\+Self\+Field\+\_\+\+U32(\begin{DoxyParamCaption}\item[{}]{T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{D\+ST }\end{DoxyParamCaption})}
+
+
+
+Read 32-\/bit unsigned integer self-\/field from channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+A\+SK} & channel\textquotesingle{}s source and destination task \\
+\hline
+{\em F\+LD} & field to read \\
+\hline
+{\em D\+ST} & address to store the result at \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga863ffeec91ffffab0966a26c91785e27}\label{group__interpow__read__write_ga863ffeec91ffffab0966a26c91785e27}} 
+\index{Read and Write@{Read and Write}!Read\+Self\+Field\+\_\+\+U8@{Read\+Self\+Field\+\_\+\+U8}}
+\index{Read\+Self\+Field\+\_\+\+U8@{Read\+Self\+Field\+\_\+\+U8}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Read\+Self\+Field\+\_\+\+U8}{ReadSelfField\_U8}}
+{\footnotesize\ttfamily \#define Read\+Self\+Field\+\_\+\+U8(\begin{DoxyParamCaption}\item[{}]{T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{D\+ST }\end{DoxyParamCaption})}
+
+
+
+Read 8-\/bit unsigned integer self-\/field from channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+A\+SK} & channel\textquotesingle{}s source and destination task \\
+\hline
+{\em F\+LD} & field to read \\
+\hline
+{\em D\+ST} & address to store the result at \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga8a1d2a8ec6e0ac991ad5ed6c18c9c07a}\label{group__interpow__read__write_ga8a1d2a8ec6e0ac991ad5ed6c18c9c07a}} 
+\index{Read and Write@{Read and Write}!Write\+Field\+\_\+16@{Write\+Field\+\_\+16}}
+\index{Write\+Field\+\_\+16@{Write\+Field\+\_\+16}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Field\+\_\+16}{WriteField\_16}}
+{\footnotesize\ttfamily \#define Write\+Field\+\_\+16(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+
+
+Write 16-\/bit signed integer field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga374eba133dbdcd78229749be95aafcfd}\label{group__interpow__read__write_ga374eba133dbdcd78229749be95aafcfd}} 
+\index{Read and Write@{Read and Write}!Write\+Field\+\_\+32@{Write\+Field\+\_\+32}}
+\index{Write\+Field\+\_\+32@{Write\+Field\+\_\+32}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Field\+\_\+32}{WriteField\_32}}
+{\footnotesize\ttfamily \#define Write\+Field\+\_\+32(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+
+
+Write 32-\/bit signed integer field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_gafd2f8f99cfe3fccfa2bea3394ed37125}\label{group__interpow__read__write_gafd2f8f99cfe3fccfa2bea3394ed37125}} 
+\index{Read and Write@{Read and Write}!Write\+Field\+\_\+8@{Write\+Field\+\_\+8}}
+\index{Write\+Field\+\_\+8@{Write\+Field\+\_\+8}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Field\+\_\+8}{WriteField\_8}}
+{\footnotesize\ttfamily \#define Write\+Field\+\_\+8(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+
+
+Write 8-\/bit signed integer field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga455a59b971b82fcf001f46ac271e4301}\label{group__interpow__read__write_ga455a59b971b82fcf001f46ac271e4301}} 
+\index{Read and Write@{Read and Write}!Write\+Field\+\_\+\+F32@{Write\+Field\+\_\+\+F32}}
+\index{Write\+Field\+\_\+\+F32@{Write\+Field\+\_\+\+F32}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Field\+\_\+\+F32}{WriteField\_F32}}
+{\footnotesize\ttfamily \#define Write\+Field\+\_\+\+F32(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+
+
+Write 32-\/bit float field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga58f71a953a06a6e8f69f9244c151dfc5}\label{group__interpow__read__write_ga58f71a953a06a6e8f69f9244c151dfc5}} 
+\index{Read and Write@{Read and Write}!Write\+Field\+\_\+\+U16@{Write\+Field\+\_\+\+U16}}
+\index{Write\+Field\+\_\+\+U16@{Write\+Field\+\_\+\+U16}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Field\+\_\+\+U16}{WriteField\_U16}}
+{\footnotesize\ttfamily \#define Write\+Field\+\_\+\+U16(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+
+
+Write 16-\/bit unsigned integer field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_gac1587788948a550d7b99c20473bf3906}\label{group__interpow__read__write_gac1587788948a550d7b99c20473bf3906}} 
+\index{Read and Write@{Read and Write}!Write\+Field\+\_\+\+U32@{Write\+Field\+\_\+\+U32}}
+\index{Write\+Field\+\_\+\+U32@{Write\+Field\+\_\+\+U32}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Field\+\_\+\+U32}{WriteField\_U32}}
+{\footnotesize\ttfamily \#define Write\+Field\+\_\+\+U32(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+
+
+Write 32-\/bit unsigned integer field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga8f0de203ad0e6a2c4b93cb5de74d11f5}\label{group__interpow__read__write_ga8f0de203ad0e6a2c4b93cb5de74d11f5}} 
+\index{Read and Write@{Read and Write}!Write\+Field\+\_\+\+U8@{Write\+Field\+\_\+\+U8}}
+\index{Write\+Field\+\_\+\+U8@{Write\+Field\+\_\+\+U8}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Field\+\_\+\+U8}{WriteField\_U8}}
+{\footnotesize\ttfamily \#define Write\+Field\+\_\+\+U8(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+
+
+Write 8-\/bit unsigned integer field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga2b60b2e1baee24139a874dcd961f8aad}\label{group__interpow__read__write_ga2b60b2e1baee24139a874dcd961f8aad}} 
+\index{Read and Write@{Read and Write}!Write\+Field\+Element\+\_\+16@{Write\+Field\+Element\+\_\+16}}
+\index{Write\+Field\+Element\+\_\+16@{Write\+Field\+Element\+\_\+16}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Field\+Element\+\_\+16}{WriteFieldElement\_16}}
+{\footnotesize\ttfamily \#define Write\+Field\+Element\+\_\+16(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC,  }\item[{}]{P\+OS }\end{DoxyParamCaption})}
+
+
+
+Write a single element of a 16-\/bit signed field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+{\em P\+OS} & offset of the element to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga597258a7c772747373103ca32b9cccff}\label{group__interpow__read__write_ga597258a7c772747373103ca32b9cccff}} 
+\index{Read and Write@{Read and Write}!Write\+Field\+Element\+\_\+32@{Write\+Field\+Element\+\_\+32}}
+\index{Write\+Field\+Element\+\_\+32@{Write\+Field\+Element\+\_\+32}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Field\+Element\+\_\+32}{WriteFieldElement\_32}}
+{\footnotesize\ttfamily \#define Write\+Field\+Element\+\_\+32(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC,  }\item[{}]{P\+OS }\end{DoxyParamCaption})}
+
+
+
+Write a single element of a 32-\/bit signed field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+{\em P\+OS} & offset of the element to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga743f1dfe8811e082696e0cf3e2739e4b}\label{group__interpow__read__write_ga743f1dfe8811e082696e0cf3e2739e4b}} 
+\index{Read and Write@{Read and Write}!Write\+Field\+Element\+\_\+8@{Write\+Field\+Element\+\_\+8}}
+\index{Write\+Field\+Element\+\_\+8@{Write\+Field\+Element\+\_\+8}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Field\+Element\+\_\+8}{WriteFieldElement\_8}}
+{\footnotesize\ttfamily \#define Write\+Field\+Element\+\_\+8(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC,  }\item[{}]{P\+OS }\end{DoxyParamCaption})}
+
+
+
+Write a single element of a 8-\/bit signed field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+{\em P\+OS} & offset of the element to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_gac680c31fb99e389820321fc05f383c33}\label{group__interpow__read__write_gac680c31fb99e389820321fc05f383c33}} 
+\index{Read and Write@{Read and Write}!Write\+Field\+Element\+\_\+\+F32@{Write\+Field\+Element\+\_\+\+F32}}
+\index{Write\+Field\+Element\+\_\+\+F32@{Write\+Field\+Element\+\_\+\+F32}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Field\+Element\+\_\+\+F32}{WriteFieldElement\_F32}}
+{\footnotesize\ttfamily \#define Write\+Field\+Element\+\_\+\+F32(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC,  }\item[{}]{P\+OS }\end{DoxyParamCaption})}
+
+
+
+Write a single element of a 32-\/bit float field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+{\em P\+OS} & offset of the element to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_gaa4b03c0cc35ebc5645ce74c5ce045986}\label{group__interpow__read__write_gaa4b03c0cc35ebc5645ce74c5ce045986}} 
+\index{Read and Write@{Read and Write}!Write\+Field\+Element\+\_\+\+U16@{Write\+Field\+Element\+\_\+\+U16}}
+\index{Write\+Field\+Element\+\_\+\+U16@{Write\+Field\+Element\+\_\+\+U16}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Field\+Element\+\_\+\+U16}{WriteFieldElement\_U16}}
+{\footnotesize\ttfamily \#define Write\+Field\+Element\+\_\+\+U16(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC,  }\item[{}]{P\+OS }\end{DoxyParamCaption})}
+
+
+
+Write a single element of a 16-\/bit unsigned field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+{\em P\+OS} & offset of the element to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga61bc8f63b25404b555c65c108947a0c4}\label{group__interpow__read__write_ga61bc8f63b25404b555c65c108947a0c4}} 
+\index{Read and Write@{Read and Write}!Write\+Field\+Element\+\_\+\+U32@{Write\+Field\+Element\+\_\+\+U32}}
+\index{Write\+Field\+Element\+\_\+\+U32@{Write\+Field\+Element\+\_\+\+U32}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Field\+Element\+\_\+\+U32}{WriteFieldElement\_U32}}
+{\footnotesize\ttfamily \#define Write\+Field\+Element\+\_\+\+U32(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC,  }\item[{}]{P\+OS }\end{DoxyParamCaption})}
+
+
+
+Write a single element of a 32-\/bit unsigned field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+{\em P\+OS} & offset of the element to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_gacaeeccfb46736afa8aa68d3ead9d49f3}\label{group__interpow__read__write_gacaeeccfb46736afa8aa68d3ead9d49f3}} 
+\index{Read and Write@{Read and Write}!Write\+Field\+Element\+\_\+\+U8@{Write\+Field\+Element\+\_\+\+U8}}
+\index{Write\+Field\+Element\+\_\+\+U8@{Write\+Field\+Element\+\_\+\+U8}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Field\+Element\+\_\+\+U8}{WriteFieldElement\_U8}}
+{\footnotesize\ttfamily \#define Write\+Field\+Element\+\_\+\+U8(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+T\+A\+SK,  }\item[{}]{D\+S\+T\+\_\+\+T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC,  }\item[{}]{P\+OS }\end{DoxyParamCaption})}
+
+
+
+Write a single element of a 8-\/bit unsigned field in channel ({\itshape S\+R\+C\+\_\+\+T\+A\+SK}, {\itshape D\+S\+T\+\_\+\+T\+A\+SK} ). For the time being, both S\+R\+C\+\_\+\+T\+A\+SK and D\+S\+T\+\_\+\+T\+A\+SK are needed as input params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+R\+C\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+S\+T\+\_\+\+T\+A\+SK} & channel\textquotesingle{}s destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+{\em P\+OS} & offset of the element to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga5b49e015f652cdccc9755666ed7603b7}\label{group__interpow__read__write_ga5b49e015f652cdccc9755666ed7603b7}} 
+\index{Read and Write@{Read and Write}!Write\+Self\+Field\+\_\+16@{Write\+Self\+Field\+\_\+16}}
+\index{Write\+Self\+Field\+\_\+16@{Write\+Self\+Field\+\_\+16}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Self\+Field\+\_\+16}{WriteSelfField\_16}}
+{\footnotesize\ttfamily \#define Write\+Self\+Field\+\_\+16(\begin{DoxyParamCaption}\item[{}]{T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+
+
+Write 16-\/bit signed integer self-\/field in channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+A\+SK} & channel\textquotesingle{}s source and destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga481cc0dfd07e4ddc56f9622ac5601f66}\label{group__interpow__read__write_ga481cc0dfd07e4ddc56f9622ac5601f66}} 
+\index{Read and Write@{Read and Write}!Write\+Self\+Field\+\_\+32@{Write\+Self\+Field\+\_\+32}}
+\index{Write\+Self\+Field\+\_\+32@{Write\+Self\+Field\+\_\+32}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Self\+Field\+\_\+32}{WriteSelfField\_32}}
+{\footnotesize\ttfamily \#define Write\+Self\+Field\+\_\+32(\begin{DoxyParamCaption}\item[{}]{T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+
+
+Write 32-\/bit signed integer self-\/field in channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+A\+SK} & channel\textquotesingle{}s source and destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga4a8d4891f309ee7ad151829addbb2f9b}\label{group__interpow__read__write_ga4a8d4891f309ee7ad151829addbb2f9b}} 
+\index{Read and Write@{Read and Write}!Write\+Self\+Field\+\_\+8@{Write\+Self\+Field\+\_\+8}}
+\index{Write\+Self\+Field\+\_\+8@{Write\+Self\+Field\+\_\+8}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Self\+Field\+\_\+8}{WriteSelfField\_8}}
+{\footnotesize\ttfamily \#define Write\+Self\+Field\+\_\+8(\begin{DoxyParamCaption}\item[{}]{T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+
+
+Write 8-\/bit signed integer self-\/field in channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+A\+SK} & channel\textquotesingle{}s source and destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_gaec0f82acde1a6ba9d8740f49a28452ca}\label{group__interpow__read__write_gaec0f82acde1a6ba9d8740f49a28452ca}} 
+\index{Read and Write@{Read and Write}!Write\+Self\+Field\+\_\+\+F32@{Write\+Self\+Field\+\_\+\+F32}}
+\index{Write\+Self\+Field\+\_\+\+F32@{Write\+Self\+Field\+\_\+\+F32}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Self\+Field\+\_\+\+F32}{WriteSelfField\_F32}}
+{\footnotesize\ttfamily \#define Write\+Self\+Field\+\_\+\+F32(\begin{DoxyParamCaption}\item[{}]{T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+
+
+Write 32-\/bit float self-\/field in channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+A\+SK} & channel\textquotesingle{}s source and destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga397af44c51f5c0b43aa48a429d64972f}\label{group__interpow__read__write_ga397af44c51f5c0b43aa48a429d64972f}} 
+\index{Read and Write@{Read and Write}!Write\+Self\+Field\+\_\+\+U16@{Write\+Self\+Field\+\_\+\+U16}}
+\index{Write\+Self\+Field\+\_\+\+U16@{Write\+Self\+Field\+\_\+\+U16}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Self\+Field\+\_\+\+U16}{WriteSelfField\_U16}}
+{\footnotesize\ttfamily \#define Write\+Self\+Field\+\_\+\+U16(\begin{DoxyParamCaption}\item[{}]{T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+
+
+Write 16-\/bit unsigned integer self-\/field in channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+A\+SK} & channel\textquotesingle{}s source and destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga99ddf27f2c34b3d876d525597eb0d267}\label{group__interpow__read__write_ga99ddf27f2c34b3d876d525597eb0d267}} 
+\index{Read and Write@{Read and Write}!Write\+Self\+Field\+\_\+\+U32@{Write\+Self\+Field\+\_\+\+U32}}
+\index{Write\+Self\+Field\+\_\+\+U32@{Write\+Self\+Field\+\_\+\+U32}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Self\+Field\+\_\+\+U32}{WriteSelfField\_U32}}
+{\footnotesize\ttfamily \#define Write\+Self\+Field\+\_\+\+U32(\begin{DoxyParamCaption}\item[{}]{T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+
+
+Write 32-\/bit unsigned integer self-\/field in channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+A\+SK} & channel\textquotesingle{}s source and destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__interpow__read__write_ga3ccf9342cdc5059a8657527baec91f75}\label{group__interpow__read__write_ga3ccf9342cdc5059a8657527baec91f75}} 
+\index{Read and Write@{Read and Write}!Write\+Self\+Field\+\_\+\+U8@{Write\+Self\+Field\+\_\+\+U8}}
+\index{Write\+Self\+Field\+\_\+\+U8@{Write\+Self\+Field\+\_\+\+U8}!Read and Write@{Read and Write}}
+\subsubsection{\texorpdfstring{Write\+Self\+Field\+\_\+\+U8}{WriteSelfField\_U8}}
+{\footnotesize\ttfamily \#define Write\+Self\+Field\+\_\+\+U8(\begin{DoxyParamCaption}\item[{}]{T\+A\+SK,  }\item[{}]{F\+LD,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+
+
+Write 8-\/bit unsigned integer self-\/field in channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). For the time being, T\+A\+SK is needed as input param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+A\+SK} & channel\textquotesingle{}s source and destination task \\
+\hline
+{\em F\+LD} & field to write \\
+\hline
+{\em S\+RC} & address of the variable to write into the field \\
+\hline
+\end{DoxyParams}

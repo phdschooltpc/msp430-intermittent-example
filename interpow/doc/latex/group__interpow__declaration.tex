@@ -1,0 +1,137 @@
+\hypertarget{group__interpow__declaration}{}\section{Preliminary declarations}
+\label{group__interpow__declaration}\index{Preliminary declarations@{Preliminary declarations}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__interpow__declaration_gaf3547b2fb7ca0e0fe642e6b5cbdbdaf2}{New\+Task}(N\+A\+ME,  FN,  H\+A\+S\+\_\+\+S\+E\+L\+F\+\_\+\+C\+H\+A\+N\+N\+EL)
+\begin{DoxyCompactList}\small\item\em Create a new task. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__declaration_ga1156bffe7de2162c5889cf427dd30657}{Initial\+Task}(T\+A\+SK)
+\begin{DoxyCompactList}\small\item\em Define which task has to execute first on the very first start of the system. {\itshape T\+A\+SK} has to be defined before using this macro. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__declaration_gafcc1282442066a75e573d78ae3b6dac1}{New\+Field}(S\+RC,  D\+ST,  N\+A\+ME,  T\+Y\+PE,  L\+EN)
+\begin{DoxyCompactList}\small\item\em Define a new field, conceptually belonging to the channel ({\itshape S\+RC}, {\itshape D\+ST} ). {\itshape S\+RC} and {\itshape D\+ST} have to be defined before using this macro. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__interpow__declaration_ga224e55a4652c727d23a3301b314398bd}{New\+Self\+Field}(T\+A\+SK,  N\+A\+ME,  T\+Y\+PE,  L\+EN,  C\+O\+DE)
+\begin{DoxyCompactList}\small\item\em Define a new self-\/field, conceptually belonging to the self-\/channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). {\itshape T\+A\+SK} has to be defined before using this macro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Macros for preliminary Task and Field declarations.
+
+\begin{DoxyParagraph}{Channels}
+Channels allow two tasks to communicate with each other, or a task to communicate with itself. A channel is defined by its {\itshape source} and {\itshape destination} tasks, and is referred to as ({\itshape source}, {\itshape destination}).
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Declarations}
+Declarations of tasks, initial task, fields and self-\/fields must be in the global area outside the {\itshape main}, and have to follow this order\+: \begin{DoxyItemize}
+\item tasks declarations, using {\ttfamily \hyperlink{group__interpow__declaration_gaf3547b2fb7ca0e0fe642e6b5cbdbdaf2}{New\+Task()}}; \item initial task declaration, using {\ttfamily \hyperlink{group__interpow__declaration_ga1156bffe7de2162c5889cf427dd30657}{Initial\+Task()}}; \item fields and self-\/fields declarations, using {\ttfamily \hyperlink{group__interpow__declaration_gafcc1282442066a75e573d78ae3b6dac1}{New\+Field()}} and {\ttfamily \hyperlink{group__interpow__declaration_ga224e55a4652c727d23a3301b314398bd}{New\+Self\+Field()}}. \end{DoxyItemize}
+
+\end{DoxyParagraph}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__interpow__declaration_ga1156bffe7de2162c5889cf427dd30657}\label{group__interpow__declaration_ga1156bffe7de2162c5889cf427dd30657}} 
+\index{Preliminary declarations@{Preliminary declarations}!Initial\+Task@{Initial\+Task}}
+\index{Initial\+Task@{Initial\+Task}!Preliminary declarations@{Preliminary declarations}}
+\subsubsection{\texorpdfstring{Initial\+Task}{InitialTask}}
+{\footnotesize\ttfamily \#define Initial\+Task(\begin{DoxyParamCaption}\item[{}]{T\+A\+SK }\end{DoxyParamCaption})}
+
+
+
+Define which task has to execute first on the very first start of the system. {\itshape T\+A\+SK} has to be defined before using this macro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+A\+SK} & name of the task\\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Non-\/volatility}
+The library requires the user to use a {\ttfamily \#pragma} before calling this macro, in order to save the program state to non-\/volatile memory, i.\+e. \begin{DoxyVerb}#pragma PERSISTENT(PersState)
+InitialTask(myInitialTask)
+\end{DoxyVerb}
+ Note that the argument of {\ttfamily P\+E\+R\+S\+I\+S\+T\+E\+NT} is fixed. 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{group__interpow__declaration_gafcc1282442066a75e573d78ae3b6dac1}\label{group__interpow__declaration_gafcc1282442066a75e573d78ae3b6dac1}} 
+\index{Preliminary declarations@{Preliminary declarations}!New\+Field@{New\+Field}}
+\index{New\+Field@{New\+Field}!Preliminary declarations@{Preliminary declarations}}
+\subsubsection{\texorpdfstring{New\+Field}{NewField}}
+{\footnotesize\ttfamily \#define New\+Field(\begin{DoxyParamCaption}\item[{}]{S\+RC,  }\item[{}]{D\+ST,  }\item[{}]{N\+A\+ME,  }\item[{}]{T\+Y\+PE,  }\item[{}]{L\+EN }\end{DoxyParamCaption})}
+
+
+
+Define a new field, conceptually belonging to the channel ({\itshape S\+RC}, {\itshape D\+ST} ). {\itshape S\+RC} and {\itshape D\+ST} have to be defined before using this macro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+RC} & channel\textquotesingle{}s source task \\
+\hline
+{\em D\+ST} & channel\textquotesingle{}s destination task \\
+\hline
+{\em N\+A\+ME} & field\textquotesingle{}s name \\
+\hline
+{\em T\+Y\+PE} & field\textquotesingle{}s T\+Y\+PE, must be a value of \hyperlink{group___f_i_e_l_d___t_y_p_e_s}{F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+ES} \\
+\hline
+{\em L\+EN} & field\textquotesingle{}s length (if L\+EN$>$1 the field is an array)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Non-\/volatility}
+Fields have to be non-\/volatile, and have to be initialised only at the first start of the program. In order to do so, before declaring a field {\itshape my\+Field}, belonging to the channel ({\itshape ST}, {\itshape DT} ), a {\ttfamily \#pragma} has to be used, i.\+e. \begin{DoxyVerb}#pragma PERSISTENT(PersField(ST, DT, myField))
+NewField(ST, DT, myField, type, len)
+\end{DoxyVerb}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{group__interpow__declaration_ga224e55a4652c727d23a3301b314398bd}\label{group__interpow__declaration_ga224e55a4652c727d23a3301b314398bd}} 
+\index{Preliminary declarations@{Preliminary declarations}!New\+Self\+Field@{New\+Self\+Field}}
+\index{New\+Self\+Field@{New\+Self\+Field}!Preliminary declarations@{Preliminary declarations}}
+\subsubsection{\texorpdfstring{New\+Self\+Field}{NewSelfField}}
+{\footnotesize\ttfamily \#define New\+Self\+Field(\begin{DoxyParamCaption}\item[{}]{T\+A\+SK,  }\item[{}]{N\+A\+ME,  }\item[{}]{T\+Y\+PE,  }\item[{}]{L\+EN,  }\item[{}]{C\+O\+DE }\end{DoxyParamCaption})}
+
+
+
+Define a new self-\/field, conceptually belonging to the self-\/channel ({\itshape T\+A\+SK}, {\itshape T\+A\+SK} ). {\itshape T\+A\+SK} has to be defined before using this macro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+A\+SK} & channel\textquotesingle{}s source and destination task \\
+\hline
+{\em N\+A\+ME} & field\textquotesingle{}s name \\
+\hline
+{\em T\+Y\+PE} & field\textquotesingle{}s T\+Y\+PE, must be a value of \hyperlink{group___f_i_e_l_d___t_y_p_e_s}{F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+ES} \\
+\hline
+{\em L\+EN} & field\textquotesingle{}s length (if L\+EN$>$1 the field is an array) \\
+\hline
+{\em C\+O\+DE} & field\textquotesingle{}s code, must be a value of \hyperlink{group___s_e_l_f___f_i_e_l_d___c_o_d_e_s}{S\+E\+L\+F\+\_\+\+F\+I\+E\+L\+D\+\_\+\+C\+O\+D\+ES}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Self-\/field code}
+A specific self-\/channel ({\itshape T}, {\itshape T} ) can have at most 8 self-\/fields. Self-\/fields belonging to the same self-\/channel {\bfseries must have different codes}, but they do not need to be sequential.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Non-\/volatility}
+Self-\/fields have to be non-\/volatile, and have to be initialised only at the first start of the program. In order to do so, before declaring a self-\/field {\itshape my\+Field}, belonging to the self-\/channel ({\itshape T}, {\itshape T} ), two {\ttfamily \#pragma} have to be used, i.\+e. \begin{DoxyVerb}#pragma PERSISTENT(PersSField0(T, myField))
+#pragma PERSISTENT(PersSField1(T, myField))
+NewSelfField(T, myField, type, len, code)
+\end{DoxyVerb}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{group__interpow__declaration_gaf3547b2fb7ca0e0fe642e6b5cbdbdaf2}\label{group__interpow__declaration_gaf3547b2fb7ca0e0fe642e6b5cbdbdaf2}} 
+\index{Preliminary declarations@{Preliminary declarations}!New\+Task@{New\+Task}}
+\index{New\+Task@{New\+Task}!Preliminary declarations@{Preliminary declarations}}
+\subsubsection{\texorpdfstring{New\+Task}{NewTask}}
+{\footnotesize\ttfamily \#define New\+Task(\begin{DoxyParamCaption}\item[{}]{N\+A\+ME,  }\item[{}]{FN,  }\item[{}]{H\+A\+S\+\_\+\+S\+E\+L\+F\+\_\+\+C\+H\+A\+N\+N\+EL }\end{DoxyParamCaption})}
+
+
+
+Create a new task. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N\+A\+ME} & task\textquotesingle{}s name \\
+\hline
+{\em FN} & pointer to the function to execute \\
+\hline
+{\em H\+A\+S\+\_\+\+S\+E\+L\+F\+\_\+\+C\+H\+A\+N\+N\+EL} & 1 if task has self-\/channel, 0 otherwise\\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Non-\/volatility}
+Tasks have to be non-\/volatile, and have to be initialised only at the first start of the program. In order to do so, before declaring a task {\itshape my\+Task}, a {\ttfamily \#pragma} has to be used, i.\+e. \begin{DoxyVerb}#pragma PERSISTENT(myTask)
+NewTask(myTask, myFunction, x)
+\end{DoxyVerb}
+ where x = 0, 1. 
+\end{DoxyParagraph}
